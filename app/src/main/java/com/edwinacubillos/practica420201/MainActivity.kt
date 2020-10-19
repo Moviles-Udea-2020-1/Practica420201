@@ -7,7 +7,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //creando rama develeop
+        //creando la rama develeop
         //Creando feature/perimetro_cuadro
     }
 }
