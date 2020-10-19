@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Practica420201</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="perimetro_hex">Perimetro Hexagono</string>
+    <string name="hexagon">Hexagono</string>
+    <string name="lados">Lados</string>
+    <string name="longitud">Longitud</string>
+    <string name="perimetro">Perimetro</string>
+    <string name="calculo">Calcular</string>
 </resources>
