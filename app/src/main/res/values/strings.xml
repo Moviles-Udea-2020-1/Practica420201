@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Practica420201</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="area_triangulo">Área del Triángulo</string>
+    <string name="base_triangulo">Base del Triángulo</string>
+    <string name="altura_triangulo">Altura del Triángulo</string>
+    <string name="calcular_area_triangulo_button">Calcular Área</string>
+    <string name="image_description">Partes del triangulo</string>
 </resources>
