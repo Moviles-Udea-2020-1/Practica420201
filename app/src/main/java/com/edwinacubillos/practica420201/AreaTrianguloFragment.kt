@@ -30,6 +30,4 @@ class AreaTrianguloFragment : Fragment() {
         }
 
     }
-
-    companion object
 }
