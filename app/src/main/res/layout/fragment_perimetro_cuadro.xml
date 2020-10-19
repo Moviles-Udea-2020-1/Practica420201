@@ -5,7 +5,7 @@
     android:id="@+id/perimetro_Layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#4F5254"
     tools:context=".PerimetroCuadroFragment">
 
     <TextView
@@ -32,7 +32,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="40dp"
-        android:background="#FFFFFF"
+        android:background="#313435"
         android:contentDescription="@string/perimetro_cuadro"
         android:src="@drawable/cuadrado"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,6 +64,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
+        android:hint="@string/valor"
         android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
