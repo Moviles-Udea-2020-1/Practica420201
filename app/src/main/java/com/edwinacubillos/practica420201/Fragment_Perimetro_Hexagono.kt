@@ -23,7 +23,7 @@ class Fragment_Perimetro_Hexagono : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         button_calculo.setOnClickListener {
-            
+
             if (editTex_lados.text.toString()=="" || editTex_longitud.text.toString()=="" ){
                 editTex_perimetro.setText("0")
             }else{
