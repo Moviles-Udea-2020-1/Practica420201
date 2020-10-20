@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Practica420201</string>
+    <string name="perimetroCirculo">Calcular el perímetro de un círculo</string>
+    <string name="ingresarRadio">Ingrese el radio</string>
+    <string name="valorRadio" />
+    <string name="calcularPerimetroCir">Calcular</string>
+    <string name="resultado" />
 </resources>
