@@ -23,10 +23,16 @@ class Fragment_Perimetro_Hexagono : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         button_calculo.setOnClickListener {
-            val lados= editTex_lados.text.toString().toInt()
-            val longitud=editTex_longitud.text.toString().toDouble()
-            var resultado:Double= lados*longitud
-            editTex_perimetro.setText(resultado.toString())
+            
+            if (editTex_lados.text.toString()=="" || editTex_longitud.text.toString()=="" ){
+                editTex_perimetro.setText("0")
+            }else{
+                val lados= editTex_lados.text.toString().toInt()
+                val longitud=editTex_longitud.text.toString().toDouble()
+                var resultado:Double= lados*longitud
+                editTex_perimetro.setText(resultado.toString())
+            }
+
 
         }
 
