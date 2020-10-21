@@ -27,10 +27,24 @@
     <string name="altura_triangulo">Altura del Triángulo</string>
     <string name="calcular_area_triangulo_button">Calcular Área</string>
     <string name="image_description">Partes del triangulo</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ladouno">Valor del lado uno</string>
     <string name="lado_dos">Valor del  lado dos</string>
     <string name="lado_tres">Valor del lado tres</string>
     <string name="calculo_perimetro">Perimetro de un triangulo</string>
+    <string name="hexagon_area">Hexagon area</string>
+    <string name="regular">Regular</string>
+    <string name="irregular">Irregular</string>
+    <string name="regular_hexagon_area">Regular hexagon area</string>
+    <string name="irregular_hexagon_area">Irregular hexagon area</string>
+    <string name="calculate">Calculate</string>
+    <string name="Side">Side(units)</string>
+    <string name="resultLabel_textView">Result :</string>
+    <string name="result_textView">" "%1$.3f u^2</string>
+    <string name="angle_1">Angle 1</string>
+    <string name="angle_2">Angle 2</string>
+    <string name="angle_3">Angle 3</string>
+    <string name="angle_4">Angle 4</string>
+    <string name="angle_5">Angle 5</string>
+    <string name="angle_6">Angle 6</string>
 </resources>
