@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Practica420201</string>
+    <string name="hexagon_area">Hexagon area</string>
+    <string name="regular">Regular</string>
+    <string name="irregular">Irregular</string>
+    <string name="regular_hexagon_area">Regular hexagon area</string>
+    <string name="irregular_hexagon_area">Irregular hexagon area</string>
+    <string name="calculate">Calculate</string>
+    <string name="Side">Side(units)</string>
+    <string name="resultLabel_textView">Result :</string>
+    <string name="result_textView">" "%1$.3f u^2</string>
+    <string name="angle_1">Angle 1</string>
+    <string name="angle_2">Angle 2</string>
+    <string name="angle_3">Angle 3</string>
+    <string name="angle_4">Angle 4</string>
+    <string name="angle_5">Angle 5</string>
+    <string name="angle_6">Angle 6</string>
 </resources>
