@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //creando la rama develeop
         //creando feature/area_cuadro_branch
+        // prueba
 
     }
 }
