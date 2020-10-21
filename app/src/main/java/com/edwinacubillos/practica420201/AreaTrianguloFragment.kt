@@ -21,10 +21,22 @@ class AreaTrianguloFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         calcular_area_triangulo_button.setOnClickListener {
-            val base = base_triangulo_edit_text.text.toString().toFloat()
-            val altura = altura_triangulo_edit_text.text.toString().toFloat()
+            val basestr = base_triangulo_edit_text.text.toString()
+            val alturastr = altura_triangulo_edit_text.text.toString()
 
-            var area = base * altura / 2
+            if (basestr.isEmpty()) {
+                resultado_area_triangulo_text_view.text = "Ingrese la base del triángulo!"
+                return@setOnClickListener
+            }
+            if (alturastr.isEmpty()) {
+                resultado_area_triangulo_text_view.text = "Ingrese la altura del triángulo!"
+                return@setOnClickListener
+            }
+
+            val base = basestr.toDouble()
+            val altura = alturastr.toDouble()
+
+            val area = (base * altura) / 2.0
 
             resultado_area_triangulo_text_view.text = "El área del triángulo es: $area"
         }
