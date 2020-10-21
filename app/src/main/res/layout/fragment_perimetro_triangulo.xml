@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:backgroundTint="#CBF1334F"
-        android:text="@string/calcularperimetro"
+        android:text="@string/calcular_perimetro"
         android:textColor="#FAF7F7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
