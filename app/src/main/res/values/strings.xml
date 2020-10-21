@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Practica420201</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="perimetro_rectangulo">Perímetro de un rectángulo</string>
     <string name="ingresebase">Ingrese el valor de la base en cm</string>
     <string name="base">Base del rectángulo</string>
@@ -22,10 +21,16 @@
     <string name="calcularPerimetroCir">Calcular</string>
     <string name="lado_a">a</string>
     <string name="lado_b">b</string>
-    <string name="resultado">Mostrar Resultado</string
+    <string name="resultado">Mostrar Resultado</string>
     <string name="area_triangulo">Área del Triángulo</string>
     <string name="base_triangulo">Base del Triángulo</string>
     <string name="altura_triangulo">Altura del Triángulo</string>
     <string name="calcular_area_triangulo_button">Calcular Área</string>
     <string name="image_description">Partes del triangulo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ladouno">Valor del lado uno</string>
+    <string name="lado_dos">Valor del  lado dos</string>
+    <string name="lado_tres">Valor del lado tres</string>
+    <string name="calculo_perimetro">Perimetro de un triangulo</string>
 </resources>
