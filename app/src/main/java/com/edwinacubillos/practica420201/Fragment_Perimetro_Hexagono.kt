@@ -32,7 +32,7 @@ class Fragment_Perimetro_Hexagono : Fragment() {
                 var resultado:Double= lados*longitud
                 editTex_perimetro.setText(resultado.toString())
             }
-
+        //hello
 
         }
 
