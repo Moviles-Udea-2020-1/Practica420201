@@ -5,7 +5,7 @@
     android:id="@+id/perimetro_Layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4F5254"
+    android:background="#FFFFFF"
     tools:context=".PerimetroCuadroFragment">
 
     <TextView
@@ -25,27 +25,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="315dp"
-        android:layout_height="247dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="40dp"
-        android:background="#313435"
-        android:contentDescription="@string/perimetro_cuadro"
-        android:src="@drawable/cuadrado"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/perimetro_cuadro_titulo" />
-
     <TextView
         android:id="@+id/valor_a_text_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="20dp"
         android:text="@string/valor_a"
         android:textAlignment="center"
@@ -65,7 +50,7 @@
         android:layout_marginEnd="100dp"
         android:ems="10"
         android:hint="@string/valor"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,4 +83,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/valor_a_edit_text" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="251dp"
+        android:layout_height="236dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="26dp"
+        android:contentDescription="@string/perimetro_cuadro"
+        android:src="@drawable/cuadrado"
+        app:layout_constraintBottom_toTopOf="@+id/valor_a_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perimetro_cuadro_titulo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
