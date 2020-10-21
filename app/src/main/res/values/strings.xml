@@ -10,4 +10,10 @@
     <string name="perimetro_resultado">El perímetro del rectángulo es:</string>
     <string name="cm"> cm</string>
     <string name="vacio" />
+    <string name="perimetro_hex">Perimetro Hexagono</string>
+    <string name="hexagon">Hexagono</string>
+    <string name="lados">Lados</string>
+    <string name="longitud">Longitud</string>
+    <string name="perimetro">Perimetro</string>
+    <string name="calculo">Calcular</string>
 </resources>
