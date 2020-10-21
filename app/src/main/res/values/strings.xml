@@ -1,5 +1,33 @@
 <resources>
     <string name="app_name">Practica420201</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="perimetro_rectangulo">Perímetro de un rectángulo</string>
+    <string name="ingresebase">Ingrese el valor de la base en cm</string>
+    <string name="base">Base del rectángulo</string>
+    <string name="valor_altura">Ingrese el valor de la altura en cm</string>
+    <string name="altura">Altura del rectángulo</string>
+    <string name="calcular_perimetro">Calcular perímetro</string>
+    <string name="perimetro_resultado">El perímetro del rectángulo es:</string>
+    <string name="cm"> cm</string>
+    <string name="vacio" />
+    <string name="perimetro_hex">Perimetro Hexagono</string>
+    <string name="hexagon">Hexagono</string>
+    <string name="lados">Lados</string>
+    <string name="longitud">Longitud</string>
+    <string name="perimetro">Perimetro</string>
+    <string name="calculo">Calcular</string>
+    <string name="perimetroCirculo">Calcular el perímetro de un círculo</string>
+    <string name="ingresarRadio">Ingrese el radio</string>
+    <string name="valorRadio" />
+    <string name="calcularPerimetroCir">Calcular</string>
+    <string name="lado_a">a</string>
+    <string name="lado_b">b</string>
+    <string name="resultado">Mostrar Resultado</string
+    <string name="area_triangulo">Área del Triángulo</string>
+    <string name="base_triangulo">Base del Triángulo</string>
+    <string name="altura_triangulo">Altura del Triángulo</string>
+    <string name="calcular_area_triangulo_button">Calcular Área</string>
+    <string name="image_description">Partes del triangulo</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ladouno">Valor del lado uno</string>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Area del rectangulo"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/cuadrado"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Ingrese los valores de los lados"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/lado_a"
+        android:layout_width="100dp"
+        android:layout_height="51dp"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:hint="@string/lado_a"
+        android:inputType="number"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/lado_b"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:hint="@string/lado_b"
+        android:inputType="number"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Resultado en metros cuadrados"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/resultado"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
