@@ -8,12 +8,12 @@
 
     <fragment
         android:id="@+id/fragment"
-        android:name="com.edwinacubillos.practica420201.Fragment_Perimetro_Hexagono"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:name="com.edwinacubillos.practica420201.PerimetrocirculoFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_perimetrocirculo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
