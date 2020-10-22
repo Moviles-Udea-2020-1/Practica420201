@@ -8,7 +8,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //creando la rama develeop
-        //creando feature/area_cuadro_branch
-
     }
 }

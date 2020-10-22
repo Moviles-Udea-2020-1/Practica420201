@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <fragment
+        android:id="@+id/hexagonArea_fragment"
+        android:name="com.edwinacubillos.practica420201.fragments.HexagonAreaFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
     <fragment
         android:id="@+id/fragment"
         android:name="com.edwinacubillos.practica420201.AreaCuadroFragment"
