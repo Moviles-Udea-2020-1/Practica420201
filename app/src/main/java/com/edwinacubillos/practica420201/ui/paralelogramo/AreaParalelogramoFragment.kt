@@ -30,7 +30,7 @@ class AreaParalelogramoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
+        //.
 
         calcular_button.setOnClickListener {
             val lado1 = lado1_edit_text.text.toString().toInt()
