@@ -54,4 +54,20 @@
     <string name="angle_4">Angle 4</string>
     <string name="angle_5">Angle 5</string>
     <string name="angle_6">Angle 6</string>
+
+    <string name="LongitudLado">longitutudLado</string>
+    <string name="rtaArea">rtaArea</string>
+    <string name="Calcular">calcular</string>
+    <string name="textview">TextView</string>
+    <string name="hola">Hola</string>
+    <string name="Area">area</string>
+    <string name="Titulo">titulo</string>
+    <string name="lado">Lado:</string>
+    <string name="area_de_un_cuadrado">AREA DE UN CUADRADO</string>
+    <string name="area">Area:</string>
+    <string name="Lado">Lado:</string>
+    <string name="ImagenCuadro">cuadrado</string>
+    <string name="en_cm">En cm</string>
+    <string name="Vacio">" "</string>
+    <string name="_0">0</string>
 </resources>

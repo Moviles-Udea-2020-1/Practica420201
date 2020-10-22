@@ -7,11 +7,13 @@
     android:background="#2C273C"
     tools:context=".MainActivity">
 
+
     <fragment
-        android:id="@+id/fragment"
-        android:name="com.edwinacubillos.practica420201.area_rectanguloFragment"
+        android:id="@+id/hexagonArea_fragment"
+        android:name="com.edwinacubillos.practica420201.fragments.HexagonAreaFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
