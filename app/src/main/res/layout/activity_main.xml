@@ -7,15 +7,10 @@
     tools:context=".MainActivity">
 
 
-    <fragment
-        android:id="@+id/hexagonArea_fragment"
-        android:name="com.edwinacubillos.practica420201.fragments.HexagonAreaFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+
     <fragment
         android:id="@+id/fragment"
-        android:name="com.edwinacubillos.practica420201.AreaCuadroFragment"
+        android:name="com.edwinacubillos.practica420201.Fragment_Perimetro_Hexagono"
         android:layout_width="369dp"
         android:layout_height="560dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,5 +19,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:layout="@layout/fragment_area_cuadro" />
+        tools:layout="@layout/fragment__perimetro__hexagono" />
 </androidx.constraintlayout.widget.ConstraintLayout>
