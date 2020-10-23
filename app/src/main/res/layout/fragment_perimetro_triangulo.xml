@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".perimetro_triangulo" >
+    tools:context=".fragments.perimetro_triangulo">
 
     <EditText
         android:id="@+id/lado_uno_text_view"
