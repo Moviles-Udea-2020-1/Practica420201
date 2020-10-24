@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">Practica420201</string>
+
+    <string name="titulo">Calcular area del paralelogramo</string>
+    <string name="lado1">Lado 1</string>
+    <string name="lado2">Lado 2</string>
+    <string name="calularArea">Calcular área</string>
+    <string name="angulo">Ángulo</string>
+    <string name="titulo1">Área del paralelogramo</string>
     <string name="perimetro_rectangulo">Perímetro de un rectángulo</string>
     <string name="ingresebase">Ingrese el valor de la base en cm</string>
     <string name="base">Base del rectángulo</string>
@@ -70,7 +77,6 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
