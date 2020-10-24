@@ -34,16 +34,17 @@ class DrawerActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
+                R.id.nav_area_hexagono,
+                R.id.nav_perimetro_hexagono,
                 R.id.nav_area_triangulo,
                 R.id.nav_perimetro_triangulo,
                 R.id.nav_area_rectangulo,
                 R.id.nav_perimetro_rectangulo,
-                R.id.nav_area_hexagono,
-                R.id.nav_perimetro_hexagono,
                 R.id.nav_area_circulo,
                 R.id.nav_perimetro_circulo,
+                R.id.nav_perimetro_cuadrado,
                 R.id.nav_area_cuadrado,
-                R.id.nav_perimetro_cuadrado
+                R.id.nav_area_paralelogramo
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
