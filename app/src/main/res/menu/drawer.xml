@@ -10,19 +10,20 @@
         android:title="@string/area_hexagono"
         app:showAsAction="never" />
     <item
+        android:id="@+id/nav_perimetro_hexagono"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/nav_area_triangulo"
         android:orderInCategory="100"
         android:title="@string/area_triangulo"
         app:showAsAction="never" />
     <item
-        android:id="@+id/nav_area_circulo"
+        android:id="@+id/nav_perimetro_triangulo"
         android:orderInCategory="100"
         android:title="@string/action_settings"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/nav_area_cuadrado"
-        android:orderInCategory="100"
-        android:title="@string/area_de_un_cuadrado"
         app:showAsAction="never" />
     <item
         android:id="@+id/nav_area_rectangulo"
@@ -30,17 +31,12 @@
         android:title="@string/action_settings"
         app:showAsAction="never" />
     <item
-        android:id="@+id/nav_area_paralelogramo"
+        android:id="@+id/nav_perimetro_rectangulo"
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
     <item
-        android:id="@+id/nav_perimetro_hexagono"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/nav_perimetro_triangulo"
+        android:id="@+id/nav_area_circulo"
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
@@ -50,14 +46,20 @@
         android:title="@string/action_settings"
         app:showAsAction="never" />
     <item
+        android:id="@+id/nav_area_cuadrado"
+        android:orderInCategory="100"
+        android:title="@string/area_de_un_cuadrado"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/nav_perimetro_cuadrado"
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+
     <item
-        android:id="@+id/nav_perimetro_rectangulo"
+        android:id="@+id/nav_area_paralelogramo"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/area_paralelogramo"
         app:showAsAction="never" />
 
 </menu>
