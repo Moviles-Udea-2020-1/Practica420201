@@ -43,6 +43,11 @@
         android:name="com.edwinacubillos.practica420201.AreaCuadroFragment"
         android:label="@string/area_de_un_cuadrado"
         tools:layout="@layout/fragment_area_cuadro" />
+    <fragment
+        android:id="@+id/nav_area_paralelogramo"
+        android:name="com.edwinacubillos.practica420201.fragments.AreaParalelogramoFragment"
+        android:label="fragment_area_paralelogramo"
+        tools:layout="@layout/fragment_area_paralelogramo" />
 
 
 </navigation>

@@ -6,9 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.nav_perimetro_hexagono.*
-import androidx.fragment.app.Fragment
-import com.edwinacubillos.practica420201.R
-import kotlinx.android.synthetic.main.fragment__perimetro__hexagono.*
 
 
 class Fragment_Perimetro_Hexagono : Fragment() {

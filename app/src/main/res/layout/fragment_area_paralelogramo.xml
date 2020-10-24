@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="8sp"
-    tools:context=".ui.paralelogramo.AreaParalelogramoFragment">
+    tools:context=".fragments.AreaParalelogramoFragment">
+
 
     <TextView
         android:id="@+id/textView"
