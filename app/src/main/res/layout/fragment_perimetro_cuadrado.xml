@@ -5,32 +5,15 @@
     android:id="@+id/perimetro_Layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".PerimetroCuadroFragment">
-
-    <TextView
-        android:id="@+id/perimetro_cuadro_titulo"
-        android:layout_width="match_parent"
-        android:layout_height="33dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/perimetro_cuadro"
-        android:textAlignment="center"
-        android:textColor="#6200EE"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="@color/Background"
+    tools:context=".fragments.PerimetroCuadradoFragment">
 
     <TextView
         android:id="@+id/valor_a_text_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="20dp"
         android:text="@string/valor_a"
         android:textAlignment="center"
@@ -46,25 +29,29 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
         android:hint="@string/valor"
+        android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/valor_a_text_view"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/valor_a_text_view" />
 
     <TextView
         android:id="@+id/resultado_text_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
         android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -76,7 +63,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="100dp"
         android:background="#6200EE"
         android:text="@string/calcular"
@@ -87,16 +74,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="251dp"
-        android:layout_height="236dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="26dp"
-        android:contentDescription="@string/perimetro_cuadro"
-        android:src="@drawable/cuadrado"
+        android:src="@drawable/ic_cuadrado"
         app:layout_constraintBottom_toTopOf="@+id/valor_a_text_view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/perimetro_cuadro_titulo" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:layout_editor_absoluteX="80dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

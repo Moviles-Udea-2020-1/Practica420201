@@ -53,7 +53,7 @@
     <item
         android:id="@+id/nav_perimetro_cuadrado"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/perimetro_cuadrado"
         app:showAsAction="never" />
 
     <item

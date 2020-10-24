@@ -1,21 +1,22 @@
-package com.edwinacubillos.practica420201
+package com.edwinacubillos.practica420201.fragments
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.fragment_perimetro_cuadro.*
+import androidx.fragment.app.Fragment
+import com.edwinacubillos.practica420201.R
+import kotlinx.android.synthetic.main.fragment_perimetro_cuadrado.*
 
-class PerimetroCuadroFragment : Fragment() {
+class PerimetroCuadradoFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_perimetro_cuadro, container, false)
+        return inflater.inflate(R.layout.fragment_perimetro_cuadrado, container, false)
 
 
     }
@@ -31,11 +32,9 @@ class PerimetroCuadroFragment : Fragment() {
             val perimetro= valor_a_edit_text.text.toString()
             val peri:Double= perimetro.toDouble()
             val resultado:Double = 4*peri
-            resultado_text_view.text= "Perímetro del Cuadro es:   ${resultado.toString()}"
+            resultado_text_view.text = "Perímetro del Cuadro es:   $resultado"
         }
     }
 
-    companion object {
-
-    }
+    companion object
 }
