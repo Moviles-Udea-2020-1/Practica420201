@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Practica420201</string>
-
     <string name="titulo">Calcular area del paralelogramo</string>
     <string name="lado1">Lado 1</string>
     <string name="lado2">Lado 2</string>
@@ -54,7 +53,6 @@
     <string name="angle_4">Angle 4</string>
     <string name="angle_5">Angle 5</string>
     <string name="angle_6">Angle 6</string>
-
     <string name="LongitudLado">longitutudLado</string>
     <string name="rtaArea">rtaArea</string>
     <string name="Calcular">calcular</string>
@@ -83,6 +81,6 @@
     <string name="perimetro_triangulo">Perímetro de un triángulo</string>
     <string name="area_rectangulo">Área de un rectángulo</string>
     <string name="area_hexagono">Área de un hexágono</string>
-    <string name="area_parelogramo">Area parelogramo</string>
     <string name="perimetro_cuadrado">Perimetro cuadrado</string>
+    <string name="area_parelogramo">Area parelogramo</string>
 </resources>

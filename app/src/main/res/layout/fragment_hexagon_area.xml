@@ -5,7 +5,7 @@
     android:id="@+id/hexagonArea_fragmentLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2C273C"
+    android:background="@color/Background"
     tools:context=".fragments.HexagonAreaFragment">
 
     <LinearLayout
@@ -16,18 +16,6 @@
         android:layout_marginEnd="16dp"
         android:orientation="vertical"
         tools:ignore="UselessParent">
-
-        <TextView
-            android:id="@+id/title_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="30dp"
-            android:hint="@string/regular_hexagon_area"
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white"
-            android:textSize="30sp"
-            tools:ignore="ContentDescription" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -244,7 +232,7 @@
                 android:layout_marginEnd="16dp"
                 android:checked="true"
                 android:text="@string/regular"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/background_dark" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/irregular_radioButton"
@@ -252,7 +240,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="@string/irregular"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/background_dark" />
 
         </RadioGroup>
 

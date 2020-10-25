@@ -44,7 +44,6 @@ class HexagonAreaFragment : Fragment() {
                 side_editText.text = null
                 result_textView.text = getString(R.string.result_textView, 0.0)
             }
-            title_textView.text = getString(R.string.regular_hexagon_area)
             hexagonImageView.setImageResource(R.drawable.ic_regular_hexagon)
             regularRadioButtonChecked = true
             irregularRadioButtonChecked = false
@@ -58,7 +57,6 @@ class HexagonAreaFragment : Fragment() {
                 side_editText.text = null
                 result_textView.text = getString(R.string.result_textView, 0.0)
             }
-            title_textView.text = getString(R.string.irregular_hexagon_area)
             hexagonImageView.setImageResource(R.drawable.ic_irregular_hexagon_angles)
             irregularRadioButtonChecked = true
             regularRadioButtonChecked = false

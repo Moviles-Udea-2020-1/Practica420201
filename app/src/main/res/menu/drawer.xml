@@ -55,11 +55,10 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
-
     <item
         android:id="@+id/nav_area_paralelogramo"
         android:orderInCategory="100"
-        android:title="@string/area_paralelogramo"
+        android:title="@string/area_parelogramo"
         app:showAsAction="never" />
 
 </menu>
