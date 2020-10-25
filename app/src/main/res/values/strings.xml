@@ -81,6 +81,10 @@
     <string name="perimetro_triangulo">Perímetro de un triángulo</string>
     <string name="area_rectangulo">Área de un rectángulo</string>
     <string name="area_hexagono">Área de un hexágono</string>
-    <string name="perimetro_cuadrado">Perimetro cuadrado</string>
+    <string name="area_paralelogramo">Area paralelogramo</string>
+    <string name="valor_a">Ingrese valor del lado:</string>
+    <string name="calcular">Calcular</string>
+    <string name="valor">"Ingrese valor "</string>
+    <string name="perimetro_cuadrado">Perímetro Cuadrado</string>
     <string name="area_parelogramo">Area parelogramo</string>
 </resources>
