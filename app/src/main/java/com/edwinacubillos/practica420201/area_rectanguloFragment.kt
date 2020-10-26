@@ -17,21 +17,19 @@ class area_rectanguloFragment: Fragment() {
         val root = inflater.inflate(R.layout.fragment_area_rectangulo, container, false)
 
 
-        root.boton.setOnClickListener(){
-            var a=lado_a.text.toString()
-            var b=lado_b.text.toString()
+        root.boton.setOnClickListener {
+            val a = lado_a.text.toString()
+            val b = lado_b.text.toString()
 
-            if (a.isNotEmpty() && b.isNotEmpty()){
-                var c= lado_a.text.toString().toInt()
-                var d= lado_b.text.toString().toInt()
-                var respuesta = c*d
-                resultado.text=respuesta.toString()
+            if (a.isNotEmpty() && b.isNotEmpty()) {
+                val c = lado_a.text.toString().toInt()
+                val d = lado_b.text.toString().toInt()
+                val respuesta = c * d
+                resultado.text = respuesta.toString()
 
             }
 
         }
         return root
-
-
     }
 }
