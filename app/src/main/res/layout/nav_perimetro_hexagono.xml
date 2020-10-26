@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4E7E7"
+    android:background="#ffffff"
     android:textAlignment="center"
     tools:context=".Fragment_Perimetro_Hexagono">
 
@@ -68,7 +68,7 @@
         android:layout_height="137dp"
         android:layout_marginTop="90dp"
         android:contentDescription="@string/hexagon"
-        android:src="@drawable/hex" />
+        android:src="@drawable/ic_regular_hexagon" />
 
     <TextView
         android:id="@+id/textView_lados"
