@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2B2B5"
+    tools:context=".fragments.AreaCuadroFragment">
+
+    <EditText
+        android:id="@+id/editText_LongitudLado"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="200dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/en_cm"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView_Lado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="215dp"
+        android:text="@string/Lado"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_Titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/area_de_un_cuadrado"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView_AreaRta"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="300dp"
+        android:text="@string/area"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_RtaArea"
+        android:layout_width="117dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="300dp"
+        android:scrollbarStyle="insideInset"
+        android:text="@string/_0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button_calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="380dp"
+        android:backgroundTint="#4F8FA8"
+        android:text="@string/Calcular"
+        android:textColor="@android:color/background_dark" />
+
+    <ImageView
+        android:id="@+id/imagenCuadrado"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/ImagenCuadro"
+        android:src="@drawable/cuadrado"
+        app:srcCompat="@drawable/cuadrado" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="268dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="380dp"
+        android:text="@string/Vacio" />
+
+</FrameLayout>
