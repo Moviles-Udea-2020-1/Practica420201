@@ -20,7 +20,6 @@
     <string name="ingresarRadio">Ingrese el radio</string>
     <string name="valorRadio" />
     <string name="calcularPerimetroCir">Calcular</string>
-    <string name="resultado" />
     <string name="lado_a">a</string>
     <string name="lado_b">b</string>
     <string name="resultado">Mostrar Resultado</string>
