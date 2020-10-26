@@ -1,11 +1,12 @@
-package com.edwinacubillos.practica420201
+package com.edwinacubillos.practica420201.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.fragment__perimetro__hexagono.*
+import androidx.fragment.app.Fragment
+import com.edwinacubillos.practica420201.R
+import kotlinx.android.synthetic.main.nav_perimetro_hexagono.*
 
 
 class Fragment_Perimetro_Hexagono : Fragment() {
@@ -16,7 +17,7 @@ class Fragment_Perimetro_Hexagono : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment__perimetro__hexagono, container, false)
+        return inflater.inflate(R.layout.nav_perimetro_hexagono, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -38,7 +39,5 @@ class Fragment_Perimetro_Hexagono : Fragment() {
 
     }
 
-    companion object {
-
-    }
+    companion object
 }

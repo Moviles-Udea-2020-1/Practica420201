@@ -1,10 +1,11 @@
-package com.edwinacubillos.practica420201
+package com.edwinacubillos.practica420201.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.edwinacubillos.practica420201.R
 import kotlinx.android.synthetic.main.fragment_area_rectangulo.*
 import kotlinx.android.synthetic.main.fragment_area_rectangulo.view.*
 
@@ -18,18 +19,20 @@ class area_rectanguloFragment: Fragment() {
 
 
         root.boton.setOnClickListener {
-            val a = lado_a.text.toString()
-            val b = lado_b.text.toString()
+            var a = lado_a.text.toString()
+            var b = lado_b.text.toString()
 
             if (a.isNotEmpty() && b.isNotEmpty()) {
-                val c = lado_a.text.toString().toInt()
-                val d = lado_b.text.toString().toInt()
-                val respuesta = c * d
+                var c = lado_a.text.toString().toInt()
+                var d = lado_b.text.toString().toInt()
+                var respuesta = c * d
                 resultado.text = respuesta.toString()
 
             }
 
         }
         return root
+
+
     }
 }
