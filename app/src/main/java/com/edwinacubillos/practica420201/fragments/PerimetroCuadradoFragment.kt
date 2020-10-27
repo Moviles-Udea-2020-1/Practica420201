@@ -22,7 +22,6 @@ class PerimetroCuadradoFragment : Fragment() {
     }
 
 
-
     @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 

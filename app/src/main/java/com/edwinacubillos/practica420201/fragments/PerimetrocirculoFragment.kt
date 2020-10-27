@@ -13,10 +13,21 @@ class PerimetrocirculoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        calcularPerimetroCir_button.setOnClickListener{
-            val radio = valorRadio.text.toString().toFloat()
-            val perimetro = (2)*(3.1416)*radio
-            resultado_textView.text = "El perímetro del círculo es: $perimetro"
+        calcularPerimetroCir_button.setOnClickListener {
+            val radio = valorRadio.text.toString()
+
+            when {
+                radio.isEmpty() -> valorRadio.error = getString(R.string.error_circulo)
+
+
+                else -> {
+                    val perimetro = (2) * (3.1416) * radio.toFloat()
+                    resultado_textView.text =
+                        getString(R.string.resultadoPerimetroCirculo) + perimetro
+                }
+
+
+            }
         }
     }
 
