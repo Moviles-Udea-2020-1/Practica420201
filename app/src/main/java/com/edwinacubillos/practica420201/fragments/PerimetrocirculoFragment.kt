@@ -16,7 +16,7 @@ class PerimetrocirculoFragment : Fragment() {
         calcularPerimetroCir_button.setOnClickListener{
             val radio = valorRadio.text.toString().toFloat()
             val perimetro = (2)*(3.1416)*radio
-            resultado_textView.text = "El perímetro del círculo es: " + perimetro
+            resultado_textView.text = "El perímetro del círculo es: $perimetro"
         }
     }
 
