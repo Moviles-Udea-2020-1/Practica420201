@@ -36,11 +36,6 @@
         android:title="@string/perimetro_de_un_rectangulo"
         app:showAsAction="never" />
     <item
-        android:id="@+id/nav_area_circulo"
-        android:orderInCategory="100"
-        android:title="@string/area_de_un_circulo"
-        app:showAsAction="never" />
-    <item
         android:id="@+id/nav_perimetro_circulo"
         android:orderInCategory="100"
         android:title="@string/perimetro_de_un_circulo"

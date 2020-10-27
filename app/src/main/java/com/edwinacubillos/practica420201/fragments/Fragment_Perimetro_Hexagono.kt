@@ -29,8 +29,8 @@ class Fragment_Perimetro_Hexagono : Fragment() {
                 editTex_perimetro.setText("0")
             }else{
                 val lados= editTex_lados.text.toString().toInt()
-                val longitud=editTex_longitud.text.toString().toDouble()
-                var resultado:Double= lados*longitud
+                val longitud = editTex_longitud.text.toString().toDouble()
+                val resultado: Double = lados * longitud
                 editTex_perimetro.setText(resultado.toString())
             }
         //hello
