@@ -9,7 +9,7 @@ import com.edwinacubillos.practica420201.R
 import kotlinx.android.synthetic.main.fragment_perimetro_triangulo.*
 
 
-class perimetro_triangulo : Fragment() {
+class PerimetroTrianguloFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,10 +24,10 @@ class perimetro_triangulo : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         perimetro_triangulo_button.setOnClickListener {
-            val ladouno = lado_uno_text_view.text.toString().toFloat()
-            val ladodos = lado_dos_text_view.text.toString().toFloat()
-            val ladotres = lado_tres_edit_text.text.toString().toFloat()
-            val perimetro = ladouno + ladodos + ladotres
+            val lado_uno = lado_uno_text_view.text.toString().toFloat()
+            val lado_dos = lado_dos_text_view.text.toString().toFloat()
+            val lado_tres = lado_tres_edit_text.text.toString().toFloat()
+            val perimetro = lado_uno + lado_dos + lado_tres
             resultado_text_view.text = perimetro.toString()
         }
     }
