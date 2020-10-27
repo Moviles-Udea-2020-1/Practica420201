@@ -37,8 +37,8 @@ class AreaTrianguloFragment : Fragment() {
                 return@setOnClickListener
             }
 
-            val base = basestr.toDouble()
-            val altura = alturastr.toDouble()
+            val base = basestr.toFloat()
+            val altura = alturastr.toFloat()
 
             val area = (base * altura) / 2.0
 
