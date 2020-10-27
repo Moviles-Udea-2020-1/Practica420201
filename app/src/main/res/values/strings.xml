@@ -94,4 +94,7 @@
     <string name="area_triangulo_res">El area del triángulo es: %f cm^2</string>
     <string name="error_base_rectangulo">Ingrese un valor para la base</string>
     <string name="error_altura_rectangulo">Ingrese un valor para la altura</string>
+    <string name="mensaje_errorl1_perimetro_triangulo">\"Por favor ingrese lado uno \"</string>
+    <string name="mensaje_errorl2_perimetro_triangulo">\"Por favor ingrese lado dos \"</string>
+    <string name="mensaje_errorl3_perimetro_triangulo">\"Por favor ingrese lado tres \"</string>
 </resources>
