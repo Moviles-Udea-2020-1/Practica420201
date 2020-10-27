@@ -3,6 +3,8 @@ package com.edwinacubillos.practica420201.drawer
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -30,6 +32,15 @@ class DrawerActivity : AppCompatActivity() {
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
+
+        val navigationView =
+            findViewById<View>(R.id.nav_view) as NavigationView
+        val header = navigationView.getHeaderView(0)
+        val name: TextView = header.findViewById(R.id.nombre_nav_textview)
+        val email: TextView = header.findViewById(R.id.group_nav_textview)
+        email.text = "FigurApp"
+        name.text = "Moviles UdeA"
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
@@ -40,7 +51,6 @@ class DrawerActivity : AppCompatActivity() {
                 R.id.nav_perimetro_triangulo,
                 R.id.nav_area_rectangulo,
                 R.id.nav_perimetro_rectangulo,
-                R.id.nav_area_circulo,
                 R.id.nav_perimetro_circulo,
                 R.id.nav_area_cuadrado,
                 R.id.nav_perimetro_cuadrado,
