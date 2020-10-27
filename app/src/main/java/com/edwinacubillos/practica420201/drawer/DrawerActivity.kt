@@ -40,7 +40,6 @@ class DrawerActivity : AppCompatActivity() {
                 R.id.nav_perimetro_triangulo,
                 R.id.nav_area_rectangulo,
                 R.id.nav_perimetro_rectangulo,
-                R.id.nav_area_circulo,
                 R.id.nav_perimetro_circulo,
                 R.id.nav_area_cuadrado,
                 R.id.nav_perimetro_cuadrado,
