@@ -1,5 +1,6 @@
 package com.edwinacubillos.practica420201.fragments
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -19,17 +20,35 @@ class PerimetroRectanguloFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_perimetro_rectangulo, container, false)
     }
 
-    //@SuppressLint("SetTextI18n")
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         calcularbutton.setOnClickListener {
+            val altura = altura_TextInputEditText.text.toString()
+            val base = base_TextInputEditText.text.toString()
+            val resultado: Double
 
-            val base = base_editTextNumberDecimal.text.toString().toDouble()
-            val altura = altura_editTextNumberDecimal.text.toString().toDouble()
-            val resultado = 2 * (base + altura)
+            when {
+                altura.isEmpty() -> {
+                    altura_TextInputEditText.error =
+                        getString(R.string.error_altura_rectangulo)
+                    valorResultante_textView.text = null
+                }
+                base.isEmpty() -> {
+                    base_TextInputEditText.error =
+                        getString(R.string.error_base_rectangulo)
+                    valorResultante_textView.text = null
+                }
 
-            valorResultante_textView.text = resultado.toString() + getString(R.string.cm)
+
+                else -> {
+                    val resultado = 2 * (base.toDouble() + altura.toDouble())
+                    valorResultante_textView.text = resultado.toString() + getString(R.string.cm)
+                }
+            }
+
+
         }
 
     }
