@@ -8,9 +8,9 @@
     <string name="titulo1">Área del paralelogramo</string>
     <string name="perimetro_rectangulo">Perímetro de un rectángulo</string>
     <string name="ingresebase">Ingrese el valor de la base en cm</string>
-    <string name="base">Base del rectángulo</string>
+    <string name="base">Base del rectángulo (cm)</string>
     <string name="valor_altura">Ingrese el valor de la altura en cm</string>
-    <string name="altura">Altura del rectángulo</string>
+    <string name="altura">Altura del rectángulo (cm)</string>
     <string name="calcular_perimetro">Calcular perímetro</string>
     <string name="perimetro_resultado">El perímetro del rectángulo es:</string>
     <string name="cm"> cm</string>
@@ -90,4 +90,6 @@
     <string name="ingrese_base">Ingrese la base del triángulo!</string>
     <string name="ingrese_altura">Ingrese la altura del triángulo!</string>
     <string name="area_triangulo_res">El area del triángulo es: %f cm^2</string>
+    <string name="error_base_rectangulo">Ingrese un valor para la base</string>
+    <string name="error_altura_rectangulo">Ingrese un valor para la altura</string>
 </resources>
