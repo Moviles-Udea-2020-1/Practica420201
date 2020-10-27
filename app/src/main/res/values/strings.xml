@@ -93,6 +93,9 @@
     <string name="ingrese_base">Ingrese la base del triángulo!</string>
     <string name="ingrese_altura">Ingrese la altura del triángulo!</string>
     <string name="area_triangulo_res">El area del triángulo es: %f cm^2</string>
+    <string name="ingrese_lado_a">Ingrese lado a</string>
+    <string name="ingrese_lado_b">Ingrese lado b</string>
+    <string name="ingrese_angulo">Ingrese el ángulo</string>
     <string name="error_base_rectangulo">Ingrese un valor para la base</string>
     <string name="error_altura_rectangulo">Ingrese un valor para la altura</string>
     <string name="mensaje_errorl1_perimetro_triangulo">\"Por favor ingrese lado uno \"</string>

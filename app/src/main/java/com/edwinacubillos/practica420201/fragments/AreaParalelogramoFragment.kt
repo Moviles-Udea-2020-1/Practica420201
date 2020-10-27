@@ -26,18 +26,39 @@ class AreaParalelogramoFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_area_paralelogramo, container, false)
     }
 
-
     private fun setup() {
         calcular_button.setOnClickListener {
-            val lado1 = lado1_edit_text.text.toString().toDouble()
-            val lado2 = lado2_edit_text.text.toString().toDouble()
-            val angulo = angulo_edit_text.text.toString().toDouble()
-            val anguloRad = (PI / 180) * angulo
+            val lado1 = lado1_edit_text.text.toString()
+            val lado2 = lado2_edit_text.text.toString()
+            val angulo = angulo_edit_text.text.toString()
 
-            val resultadoArea = lado1 * lado2 * sin(anguloRad)
-            resultado_text_view.text = getString(R.string.result_textView, resultadoArea)
+
+            when {
+                lado1.isEmpty() -> {
+                    resultado_text_view.text = getString(R.string.ingrese_lado_a)
+                    return@setOnClickListener
+                }
+                lado2.isEmpty() -> {
+                    resultado_text_view.text = getString(R.string.ingrese_lado_b)
+                    return@setOnClickListener
+                }
+                angulo.isEmpty() -> {
+                    resultado_text_view.text = getString(R.string.ingrese_angulo)
+                    return@setOnClickListener
+                }
+                else -> {
+                    val ladoA = lado1.toFloat()
+                    val ladoB = lado2.toFloat()
+                    val ang = angulo.toFloat()
+                    val anguloRad = (PI / 180) * ang
+                    val resultadoArea = ladoA * ladoB * sin(anguloRad)
+                    resultado_text_view.text = getString(R.string.result_textView, resultadoArea)
+                }
+            }
         }
     }
 
     companion object
 }
+
+
