@@ -22,16 +22,15 @@ class PerimetroCuadradoFragment : Fragment() {
     }
 
 
-
     @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         super.onViewCreated(view, savedInstanceState)
 
-        calcular_btn.setOnClickListener{
-            val perimetro= valor_a_edit_text.text.toString()
-            val peri:Double= perimetro.toDouble()
-            val resultado:Double = 4*peri
+        calcular_btn.setOnClickListener {
+            val perimetro = valor_a_edit_text.text.toString()
+            val peri: Double = perimetro.toDouble()
+            val resultado: Double = 4 * peri
             resultado_text_view.text = "Perímetro del Cuadro es:   $resultado"
         }
     }

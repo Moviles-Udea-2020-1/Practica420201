@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.edwinacubillos.practica420201.R
 import kotlinx.android.synthetic.main.fragment_hexagon_area.*
+import kotlin.math.abs
 import kotlin.math.sqrt
 
 
@@ -16,6 +17,10 @@ class HexagonAreaFragment : Fragment() {
 
     private var regularRadioButtonChecked: Boolean = false
     private var irregularRadioButtonChecked: Boolean = false
+    private var regularEditTextSetNull: Boolean = false
+    private var irregularEditTextSetNull: Boolean = false
+    private val errorMessageVertix: String = "Ingrese el vertice en formato (x.y)"
+    private val errorMessageVoidInput: String = "Ingrese un valor númerico"
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,31 +40,42 @@ class HexagonAreaFragment : Fragment() {
 
     private fun setup() {
         side_editText.addTextChangedListener(textWatcher)
+        vertexA_editText.addTextChangedListener(textWatcher)
+        vertexB_editText.addTextChangedListener(textWatcher)
+        vertexC_editText.addTextChangedListener(textWatcher)
+        vertexD_editText.addTextChangedListener(textWatcher)
+        vertexE_editText.addTextChangedListener(textWatcher)
+        vertexF_editText.addTextChangedListener(textWatcher)
 
         regular_radioButton.setOnClickListener {
             side_textFieldLayout.visibility = View.VISIBLE
-            result_layout.visibility = View.VISIBLE
-            inputAnglesIrregularHexagon_layout.visibility = View.GONE
+            inputVertexIrregularHexagon_layout.visibility = View.GONE
             if (!regularRadioButtonChecked) {
-                side_editText.text = null
+                vertexA_editText.text = null
+                vertexB_editText.text = null
+                vertexC_editText.text = null
+                vertexD_editText.text = null
+                vertexE_editText.text = null
+                vertexF_editText.text = null
+                regularEditTextSetNull = false
+                irregularEditTextSetNull = true
                 result_textView.text = getString(R.string.result_textView, 0.0)
             }
-            title_textView.text = getString(R.string.regular_hexagon_area)
-            hexagonImageView.setImageResource(R.drawable.ic_regular_hexagon)
+            hexagonImageView.setImageResource(R.drawable.ic_regular_hexagon_area)
             regularRadioButtonChecked = true
             irregularRadioButtonChecked = false
         }
 
         irregular_radioButton.setOnClickListener {
-            result_layout.visibility = View.GONE
-            inputAnglesIrregularHexagon_layout.visibility = View.VISIBLE
+            inputVertexIrregularHexagon_layout.visibility = View.VISIBLE
             side_textFieldLayout.visibility = View.GONE
             if (!irregularRadioButtonChecked) {
                 side_editText.text = null
+                irregularEditTextSetNull = false
+                regularEditTextSetNull = true
                 result_textView.text = getString(R.string.result_textView, 0.0)
             }
-            title_textView.text = getString(R.string.irregular_hexagon_area)
-            hexagonImageView.setImageResource(R.drawable.ic_irregular_hexagon_angles)
+            hexagonImageView.setImageResource(R.drawable.ic_irregular_hexagon_area_vertex)
             irregularRadioButtonChecked = true
             regularRadioButtonChecked = false
         }
@@ -77,30 +93,157 @@ class HexagonAreaFragment : Fragment() {
         }
 
         override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-            side_textFieldLayout.error = null
+            if (regular_radioButton.isChecked) {
+                isValidSideEditText()
+            } else if (irregular_radioButton.isChecked) {
+                isValidaVerticesEditTex()
+            }
         }
     }
 
     private fun calculateArea() {
-        val perimeter: Double   //units
         val area: Double
-        if (side_editText.text?.isNotBlank()!!) {
-            side_textFieldLayout.error = null
-            if (regular_radioButton.isChecked) {
+        if (regular_radioButton.isChecked) {
+            if (isValidSideEditText()) {
+                side_textFieldLayout.error = null
                 val side = side_editText.text.toString().toDouble() // meters units
-
-                perimeter = side * 6.0
-                val apothem = (side / 2.0) * sqrt(3.0)
-                area = (perimeter * apothem) / 2.0
-
+                area = (3 * sqrt(3.0) * side * side) / 2
                 result_textView.text = getString(R.string.result_textView, area)
-            } else if (irregular_radioButton.isChecked) {
+            } else {
                 result_textView.text = getString(R.string.result_textView, 0.0)
             }
+        } else if (irregular_radioButton.isChecked) {
+            if (isValidaVerticesEditTex()) {
+                val vertexA = vertexA_editText.text.toString().split(".")
+                val vertexB = vertexB_editText.text.toString().split(".")
+                val vertexC = vertexC_editText.text.toString().split(".")
+                val vertexD = vertexD_editText.text.toString().split(".")
+                val vertexE = vertexE_editText.text.toString().split(".")
+                val vertexF = vertexF_editText.text.toString().split(".")
+
+                val vertexX = arrayListOf(
+                    getXValue(vertexA), getXValue(vertexB), getXValue(vertexC),
+                    getXValue(vertexD), getXValue(vertexE), getXValue(vertexF)
+                )
+
+                val vertexY = arrayListOf(
+                    getYValue(vertexA), getYValue(vertexB), getYValue(vertexC),
+                    getYValue(vertexD), getYValue(vertexE), getYValue(vertexF)
+                )
+                area = abs(getSum(vertexX, vertexY) - getSum(vertexY, vertexX)) / 2
+                result_textView.text = getString(R.string.result_textView, area)
+            } else {
+
+                result_textView.text = getString(R.string.result_textView, 0.0)
+            }
+        }
+    }
+
+    private fun isValidSideEditText(): Boolean {
+        return if (side_editText.text?.isBlank()!! && !regularEditTextSetNull) {
+            side_textFieldLayout.error = errorMessageVoidInput
+            regularEditTextSetNull = false
+            false
         } else {
-            side_textFieldLayout.error = "Enter a number value!"
+            side_textFieldLayout.error = null
+            true
         }
 
     }
+
+    private fun isValidaVerticesEditTex(): Boolean {
+        var validVertices = true
+
+        if (!irregularEditTextSetNull) {
+            if (vertexA_editText.text?.isBlank()!!) {
+                vertexA_editText.error = errorMessageVertix
+                validVertices = false
+            } else if (vertexA_editText.text?.isNotBlank()!!) {
+                vertexA_editText.error = null
+            }
+
+            if (vertexB_editText.text?.isBlank()!!) {
+                vertexB_editText.error = errorMessageVertix
+                validVertices = false
+            } else if (vertexB_editText.text?.isNotBlank()!!) {
+                vertexB_editText.error = null
+
+            }
+
+            if (vertexC_editText.text?.isBlank()!!) {
+                vertexC_editText.error = errorMessageVertix
+                validVertices = false
+            } else if (vertexC_editText.text?.isNotBlank()!!) {
+                vertexC_editText.error = null
+            }
+
+            if (vertexD_editText.text?.isBlank()!!) {
+                vertexD_editText.error = errorMessageVertix
+                validVertices = false
+            } else if (vertexD_editText.text?.isNotBlank()!!) {
+                vertexD_editText.error = null
+            }
+
+            if (vertexE_editText.text?.isBlank()!!) {
+                vertexE_editText.error = errorMessageVertix
+                validVertices = false
+            } else if (vertexE_editText.text?.isNotBlank()!!) {
+                vertexE_editText.error = null
+            }
+
+            if (vertexF_editText.text?.isBlank()!!) {
+                vertexF_editText.error = errorMessageVertix
+                validVertices = false
+            } else if (vertexF_editText.text?.isNotBlank()!!) {
+                vertexF_editText.error = null
+            }
+        } else {
+            vertexA_editText.error = null
+            vertexB_editText.error = null
+            vertexC_editText.error = null
+            vertexD_editText.error = null
+            vertexE_editText.error = null
+            vertexF_editText.error = null
+        }
+        return validVertices
+    }
+
+    private fun getXValue(vertex: List<String>): Double {
+        return if (vertex[0].isNotBlank()) {
+            vertex[0].toDouble()
+        } else {
+            0.0
+        }
+    }
+
+    private fun getYValue(vertex: List<String>): Double {
+        return if (vertex.size > 1) {
+            if (vertex[1].isNotBlank()) {
+                vertex[1].toDouble()
+            } else {
+                0.0
+            }
+        } else {
+            0.0
+        }
+    }
+
+    private fun getSum(vertexX: ArrayList<Double>, vertexY: ArrayList<Double>): Double {
+        var i = 0
+        var j: Int
+        var sum = 0.0
+
+        do {
+            j = if (i + 1 == 6) {
+                0
+            } else {
+                i + 1
+            }
+            sum += vertexX[i] * vertexY[j]
+            i++
+        } while (i < 6)
+        return sum
+    }
+
 
 }
