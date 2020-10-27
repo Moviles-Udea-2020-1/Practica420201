@@ -29,8 +29,8 @@
     <string name="lado_b">b</string>
     <string name="resultado">Mostrar Resultado</string>
     <string name="area_triangulo">Área del Triángulo</string>
-    <string name="base_triangulo">Base del Triángulo</string>
-    <string name="altura_triangulo">Altura del Triángulo</string>
+    <string name="base_triangulo">Base del Triángulo en centímetros (b)</string>
+    <string name="altura_triangulo">Altura del Triángulo en centímetros (h)</string>
     <string name="calcular_area_triangulo_button">Calcular Área</string>
     <string name="image_description">Partes del triangulo</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -86,4 +86,8 @@
     <string name="calcular">Calcular</string>
     <string name="valor">"Ingrese valor "</string>
     <string name="perimetro_cuadrado">Perímetro Cuadrado</string>
+    <string name="ingrese_los_valores_de_los_lados">Ingrese los valores de los lados</string>
+    <string name="ingrese_base">Ingrese la base del triángulo!</string>
+    <string name="ingrese_altura">Ingrese la altura del triángulo!</string>
+    <string name="area_triangulo_res">El area del triángulo es: %f cm^2</string>
 </resources>
