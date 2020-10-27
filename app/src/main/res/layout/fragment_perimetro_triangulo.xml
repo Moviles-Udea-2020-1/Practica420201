@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Background"
-    tools:context=".fragments.perimetro_triangulo">
+    tools:context=".fragments.PerimetroTrianguloFragment">
 
 
     <ImageView

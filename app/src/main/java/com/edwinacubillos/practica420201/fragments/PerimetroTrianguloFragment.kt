@@ -9,7 +9,7 @@ import com.edwinacubillos.practica420201.R
 import kotlinx.android.synthetic.main.fragment_perimetro_triangulo.*
 
 
-class perimetro_triangulo : Fragment() {
+class PerimetroTrianguloFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
