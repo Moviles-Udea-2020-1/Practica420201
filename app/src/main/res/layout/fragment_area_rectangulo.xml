@@ -4,35 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:layout_centerVertical="true"
+    android:background="@color/Background"
     android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="Area del rectangulo"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        tools:ignore="HardcodedText,SpUsage" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        app:srcCompat="@drawable/hex"
-        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="Ingrese los valores de los lados"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/ingrese_los_valores_de_los_lados"
         android:textColor="@color/black"
-        android:textSize="24sp"
-        tools:ignore="HardcodedText" />
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/ic_area_rectangulo"
+        tools:ignore="ContentDescription" />
 
     <EditText
         android:id="@+id/lado_a"
@@ -69,6 +63,7 @@
         android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
         android:text="@string/resultado"
         android:textColor="@color/black" />
 
@@ -76,6 +71,8 @@
         android:id="@+id/boton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
         android:text="Calcular"
         tools:ignore="HardcodedText" />
 

@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B2B2B5"
-    tools:context=".AreaCuadroFragment">
+    tools:context=".fragments.AreaCuadroFragment">
 
     <EditText
         android:id="@+id/editText_LongitudLado"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="36dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/en_cm"
@@ -19,23 +19,23 @@
         android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewCuadrado" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/textView_Lado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="52dp"
         android:text="@string/Lado"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/editText_LongitudLado"
-        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintHorizontal_bias="0.391"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewCuadrado" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/textView_AreaRta"
@@ -46,22 +46,24 @@
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_Lado" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_Lado"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView_RtaArea"
         android:layout_width="117dp"
         android:layout_height="39dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:scrollbarStyle="insideInset"
         android:text="@string/_0"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toEndOf="@+id/textView_AreaRta"
         app:layout_constraintTop_toBottomOf="@+id/editText_LongitudLado" />
 
@@ -69,14 +71,14 @@
         android:id="@+id/button_calcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="176dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#4F8FA8"
         android:text="@string/Calcular"
         android:textColor="@android:color/background_dark"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.106"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_AreaRta" />
 
     <TextView
         android:id="@+id/textView2"
@@ -86,18 +88,20 @@
         android:text="@string/Vacio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toEndOf="@+id/button_calcular" />
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toEndOf="@+id/button_calcular"
+        app:layout_constraintTop_toBottomOf="@+id/textView_RtaArea"
+        app:layout_constraintVertical_bias="0.712" />
 
     <ImageView
-        android:id="@+id/imageViewCuadrado"
-        android:layout_width="262dp"
-        android:layout_height="114dp"
-        android:layout_marginTop="80dp"
+        android:id="@+id/imageView3"
+        android:layout_width="228dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="44dp"
         android:contentDescription="@string/ImagenCuadro"
-        android:src="@drawable/ic_cuadrado"
+        android:src="@drawable/ic_cuadrado2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
