@@ -14,7 +14,6 @@
         android:orderInCategory="100"
         android:title="@string/perimetro_hex"
         app:showAsAction="never" />
-
     <item
         android:id="@+id/nav_area_triangulo"
         android:orderInCategory="100"
@@ -23,7 +22,7 @@
     <item
         android:id="@+id/nav_perimetro_triangulo"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/perimetro_triangulo"
         app:showAsAction="never" />
     <item
         android:id="@+id/nav_area_rectangulo"
