@@ -24,6 +24,7 @@
     <string name="perimetroCirculo">Calcular el perímetro de un círculo</string>
     <string name="ingresarRadio">Ingrese el radio</string>
     <string name="valorRadio" />
+    <string name="error_circulo">Ingrese un valor</string>
     <string name="calcularPerimetroCir">Calcular</string>
     <string name="lado_a">a</string>
     <string name="lado_b">b</string>
@@ -87,4 +88,5 @@
     <string name="valor">"Ingrese valor "</string>
     <string name="perimetro_cuadrado">Perímetro Cuadrado</string>
     <string name="resultadoCirculo" />
+    <string name="resultadoPerimetroCirculo">\El perímetro del círculo es: \</string>
 </resources>
