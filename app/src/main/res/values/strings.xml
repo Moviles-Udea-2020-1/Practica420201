@@ -88,4 +88,5 @@
     <string name="perimetro_de_un_triangulo">Perimetro de un triangulo</string>
     <string name="perimetro_de_un_hexagono">Perimetro de un hexágono</string>
     <string name="x_y">x.y</string>
+    <string name="ingrese_los_valores_de_los_lados">Ingrese los valores de los lados</string>
 </resources>
