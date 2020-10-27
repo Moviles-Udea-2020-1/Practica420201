@@ -24,10 +24,10 @@ class PerimetroTrianguloFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         perimetro_triangulo_button.setOnClickListener {
-            val lado_uno = lado_uno_text_view.text.toString().toFloat()
-            val lado_dos = lado_dos_text_view.text.toString().toFloat()
-            val lado_tres = lado_tres_edit_text.text.toString().toFloat()
-            val perimetro = lado_uno + lado_dos + lado_tres
+            val lado1 = lado_uno_text_view.text.toString().toFloat()
+            val lado2 = lado_dos_text_view.text.toString().toFloat()
+            val lado3 = lado_tres_edit_text.text.toString().toFloat()
+            val perimetro = lado1 + lado2 + lado3
             resultado_text_view.text = perimetro.toString()
         }
     }

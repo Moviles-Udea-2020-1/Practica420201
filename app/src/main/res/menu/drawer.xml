@@ -12,8 +12,9 @@
     <item
         android:id="@+id/nav_perimetro_hexagono"
         android:orderInCategory="100"
-        android:title="@string/perimetro_hex"
+        android:title="@string/perimetro_de_un_hexagono"
         app:showAsAction="never" />
+
     <item
         android:id="@+id/nav_area_triangulo"
         android:orderInCategory="100"
@@ -22,22 +23,22 @@
     <item
         android:id="@+id/nav_perimetro_triangulo"
         android:orderInCategory="100"
-        android:title="@string/perimetro_triangulo"
+        android:title="@string/perimetro_de_un_triangulo"
         app:showAsAction="never" />
     <item
         android:id="@+id/nav_area_rectangulo"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/area_de_un_rectangulo"
         app:showAsAction="never" />
     <item
         android:id="@+id/nav_perimetro_rectangulo"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/perimetro_de_un_rectangulo"
         app:showAsAction="never" />
     <item
         android:id="@+id/nav_perimetro_circulo"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/perimetro_de_un_circulo"
         app:showAsAction="never" />
     <item
         android:id="@+id/nav_area_cuadrado"
@@ -49,11 +50,10 @@
         android:orderInCategory="100"
         android:title="@string/perimetro_cuadrado"
         app:showAsAction="never" />
-
     <item
         android:id="@+id/nav_area_paralelogramo"
         android:orderInCategory="100"
-        android:title="@string/area_paralelogramo"
+        android:title="@string/area_parelogramo"
         app:showAsAction="never" />
 
 </menu>
