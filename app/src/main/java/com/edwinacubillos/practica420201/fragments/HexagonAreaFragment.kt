@@ -19,6 +19,8 @@ class HexagonAreaFragment : Fragment() {
     private var irregularRadioButtonChecked: Boolean = false
     private var regularEditTextSetNull: Boolean = false
     private var irregularEditTextSetNull: Boolean = false
+    private val errorMessageVertix: String = "Ingrese el vertice en formato (x.y)"
+    private val errorMessageVoidInput: String = "Ingrese un valor númerico"
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -139,7 +141,7 @@ class HexagonAreaFragment : Fragment() {
 
     private fun isValidSideEditText(): Boolean {
         return if (side_editText.text?.isBlank()!! && !regularEditTextSetNull) {
-            side_textFieldLayout.error = "Enter a number value!"
+            side_textFieldLayout.error = errorMessageVoidInput
             regularEditTextSetNull = false
             false
         } else {
@@ -154,14 +156,14 @@ class HexagonAreaFragment : Fragment() {
 
         if (!irregularEditTextSetNull) {
             if (vertexA_editText.text?.isBlank()!!) {
-                vertexA_editText.error = "Enter a vertex (x.y) format"
+                vertexA_editText.error = errorMessageVertix
                 validVertices = false
             } else if (vertexA_editText.text?.isNotBlank()!!) {
                 vertexA_editText.error = null
             }
 
             if (vertexB_editText.text?.isBlank()!!) {
-                vertexB_editText.error = "Enter a vertex (x.y) format"
+                vertexB_editText.error = errorMessageVertix
                 validVertices = false
             } else if (vertexB_editText.text?.isNotBlank()!!) {
                 vertexB_editText.error = null
@@ -169,28 +171,28 @@ class HexagonAreaFragment : Fragment() {
             }
 
             if (vertexC_editText.text?.isBlank()!!) {
-                vertexC_editText.error = "Enter a vertex (x.y) format"
+                vertexC_editText.error = errorMessageVertix
                 validVertices = false
             } else if (vertexC_editText.text?.isNotBlank()!!) {
                 vertexC_editText.error = null
             }
 
             if (vertexD_editText.text?.isBlank()!!) {
-                vertexD_editText.error = "Enter a vertex (x.y) format"
+                vertexD_editText.error = errorMessageVertix
                 validVertices = false
             } else if (vertexD_editText.text?.isNotBlank()!!) {
                 vertexD_editText.error = null
             }
 
             if (vertexE_editText.text?.isBlank()!!) {
-                vertexE_editText.error = "Enter a vertex (x.y) format"
+                vertexE_editText.error = errorMessageVertix
                 validVertices = false
             } else if (vertexE_editText.text?.isNotBlank()!!) {
                 vertexE_editText.error = null
             }
 
             if (vertexF_editText.text?.isBlank()!!) {
-                vertexF_editText.error = "Enter a vertex (x.y) format"
+                vertexF_editText.error = errorMessageVertix
                 validVertices = false
             } else if (vertexF_editText.text?.isNotBlank()!!) {
                 vertexF_editText.error = null

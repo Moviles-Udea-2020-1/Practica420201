@@ -43,10 +43,10 @@
     <string name="irregular">Irregular</string>
     <string name="regular_hexagon_area">Regular hexagon area</string>
     <string name="irregular_hexagon_area">Irregular hexagon area</string>
-    <string name="calculate">Calculate</string>
-    <string name="Side">Side(units)</string>
-    <string name="resultLabel_textView">Result :</string>
-    <string name="result_textView">" "%1$.3f u^2</string>
+    <string name="calculate">Calcular</string>
+    <string name="Side">Lado S(unidades)</string>
+    <string name="resultLabel_textView">Resultado :</string>
+    <string name="result_textView">" "%1$.3f u²</string>
     <string name="LongitudLado">longitutudLado</string>
     <string name="rtaArea">rtaArea</string>
     <string name="Calcular">calcular</string>
