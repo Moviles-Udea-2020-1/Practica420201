@@ -12,10 +12,6 @@ import kotlin.math.sin
 
 
 class AreaParalelogramoFragment : Fragment() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -33,16 +29,32 @@ class AreaParalelogramoFragment : Fragment() {
 
     private fun setup() {
         calcular_button.setOnClickListener {
-            val lado1 = lado1_edit_text.text.toString().toDouble()
-            val lado2 = lado2_edit_text.text.toString().toDouble()
-            val angulo = angulo_edit_text.text.toString().toDouble()
-            val anguloRad = (PI / 180) * angulo
+            val lado1 = lado1_edit_text.text.toString()
+            val lado2 = lado2_edit_text.text.toString()
+            val angulo = angulo_edit_text.text.toString()
 
-            val resultadoArea = lado1 * lado2 * sin(anguloRad)
-            resultado_text_view.text = getString(R.string.result_textView, resultadoArea)
+
+            if (lado1.isEmpty()) {
+                resultado_text_view.text = "Ingrese lado a"
+                return@setOnClickListener
+            } else if (lado2.isEmpty()) {
+                resultado_text_view.text = "Ingrese lado b"
+                return@setOnClickListener
+            } else if (angulo.isEmpty()) {
+                resultado_text_view.text = "Ingrese el ángulo"
+                return@setOnClickListener
+            } else {
+                val ladoA = lado1.toFloat()
+                val ladoB = lado2.toFloat()
+                val ang = angulo.toFloat()
+                val anguloRad = (PI / 180) * ang
+                val resultadoArea = ladoA * ladoB * sin(anguloRad)
+                resultado_text_view.text = getString(R.string.result_textView, resultadoArea)
+            }
         }
     }
 
-    companion object {
-    }
+    companion object
 }
+
+
