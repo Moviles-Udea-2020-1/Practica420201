@@ -81,7 +81,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="26dp"
-        android:src="@drawable/ic_area_rectangulo"
+        android:src="@drawable/ic_cuadrado2"
         app:layout_constraintBottom_toTopOf="@+id/valor_a_text_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
