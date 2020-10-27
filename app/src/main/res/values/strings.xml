@@ -77,4 +77,5 @@
     <string name="perimetro_triangulo">Perímetro de un triángulo</string>
     <string name="area_rectangulo">Área de un rectángulo</string>
     <string name="area_hexagono">Área de un hexágono</string>
+    <string name="rea_de_un_cuadrado">Área de un cuadrado</string>
 </resources>

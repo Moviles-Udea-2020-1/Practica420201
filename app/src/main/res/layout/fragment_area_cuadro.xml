@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1F3F4"
+    android:background="#B2B2B5"
     tools:context=".AreaCuadroFragment">
 
     <EditText
@@ -21,7 +21,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCuadrado" />
 
     <TextView
         android:id="@+id/textView_Lado"
@@ -35,21 +35,7 @@
         app:layout_constraintEnd_toStartOf="@+id/editText_LongitudLado"
         app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <TextView
-        android:id="@+id/textView_Titulo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/area_de_un_cuadrado"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCuadrado" />
 
     <TextView
         android:id="@+id/textView_AreaRta"
@@ -104,15 +90,15 @@
         app:layout_constraintStart_toEndOf="@+id/button_calcular" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageViewCuadrado"
         android:layout_width="262dp"
         android:layout_height="114dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="80dp"
         android:contentDescription="@string/ImagenCuadro"
         android:src="@drawable/ic_cuadrado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_Titulo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
