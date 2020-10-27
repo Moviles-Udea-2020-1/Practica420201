@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
+    android:paddingTop="10dp"
     android:textAlignment="center"
     tools:context=".fragments.Fragment_Perimetro_Hexagono">
 
@@ -53,21 +54,13 @@
         android:textColor="#191818"
         android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/Titulo_textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/perimetro_hex"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="30sp" />
-
     <ImageView
         android:id="@+id/imageView_hexagono"
         android:layout_width="match_parent"
         android:layout_height="137dp"
         android:layout_marginTop="90dp"
         android:contentDescription="@string/hexagon"
+        android:paddingTop="10dp"
         android:src="@drawable/ic_regular_hexagon" />
 
     <TextView
@@ -86,11 +79,11 @@
         android:layout_height="35dp"
         android:layout_marginStart="90dp"
         android:layout_marginTop="280dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="number"
         android:textAlignment="center"
         android:textSize="12sp"
-        android:autofillHints=""
         tools:ignore="LabelFor" />
 
     <Button
