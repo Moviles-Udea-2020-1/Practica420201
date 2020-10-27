@@ -29,10 +29,16 @@ class PerimetroCuadradoFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         calcular_btn.setOnClickListener{
-            val perimetro= valor_a_edit_text.text.toString()
-            val peri:Double= perimetro.toDouble()
-            val resultado:Double = 4*peri
-            resultado_text_view.text = "Perímetro del Cuadro es:   $resultado"
+            val perimetro = valor_a_edit_text.text.toString()
+            if (perimetro.isEmpty()) {
+                valor_mensaje_text_view.text = "Ingrese valor"
+                valor_a_edit_text.requestFocus()
+            } else {
+                val peri: Double = perimetro.toDouble()
+                val resultado: Double = 4 * peri
+                valor_mensaje_text_view.text = ""
+                resultado_text_view.text = "Perímetro del Cuadro es:   $resultado"
+            }
         }
     }
 
