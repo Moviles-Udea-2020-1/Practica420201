@@ -3,16 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/nav_area_triangulo">
+    app:startDestination="@id/nav_area_hexagono">
     <fragment
         android:id="@+id/nav_area_triangulo"
         android:name="com.edwinacubillos.practica420201.fragments.AreaTrianguloFragment"
         android:label="@string/area_triangulo" />
     <fragment
         android:id="@+id/nav_perimetro_triangulo"
-        android:name="com.edwinacubillos.practica420201.fragments.perimetro_triangulo"
+        android:name="com.edwinacubillos.practica420201.fragments.PerimetroTrianguloFragment"
         android:label="@string/perimetro_triangulo"
-        tools:layout="@layout/fragment_perimetro_triangulo" />
+        tools:layout="@layout/PerimetroTrianguloFragment" />
     <fragment
         android:id="@+id/nav_area_rectangulo"
         android:name="com.edwinacubillos.practica420201.fragments.area_rectanguloFragment"
