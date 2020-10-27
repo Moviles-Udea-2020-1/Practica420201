@@ -78,7 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="26dp"
-        android:src="@drawable/ic_cuadrado"
+        android:src="@drawable/ic_area_rectangulo"
         app:layout_constraintBottom_toTopOf="@+id/valor_a_text_view"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription"

@@ -25,7 +25,7 @@ class area_rectanguloFragment: Fragment() {
             if (a.isNotEmpty() && b.isNotEmpty()) {
                 val c = lado_a.text.toString().toInt()
                 val d = lado_b.text.toString().toInt()
-                val  respuesta = c * d
+                val respuesta = c * d
                 resultado.text = respuesta.toString()
 
             }

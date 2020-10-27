@@ -97,4 +97,5 @@
     <string name="mensaje_errorl1_perimetro_triangulo">\"Por favor ingrese lado uno \"</string>
     <string name="mensaje_errorl2_perimetro_triangulo">\"Por favor ingrese lado dos \"</string>
     <string name="mensaje_errorl3_perimetro_triangulo">\"Por favor ingrese lado tres \"</string>
+    <string name="rea_de_un_cuadrado">Área de un cuadrado</string>
 </resources>
