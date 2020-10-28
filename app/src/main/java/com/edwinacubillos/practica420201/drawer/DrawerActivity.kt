@@ -3,6 +3,7 @@ package com.edwinacubillos.practica420201.drawer
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
@@ -30,16 +31,15 @@ class DrawerActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-        val navView: NavigationView = findViewById(R.id.nav_view)
+        val navView: NavigationView = this.findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
 
-        val navigationView =
-            findViewById<View>(R.id.nav_view) as NavigationView
+        val navigationView = findViewById<View>(R.id.nav_view) as NavigationView
         val header = navigationView.getHeaderView(0)
         val name: TextView = header.findViewById(R.id.nombre_nav_textview)
         val email: TextView = header.findViewById(R.id.group_nav_textview)
-        email.text = "FigurApp"
-        name.text = "Moviles UdeA"
+        email.text = getString(R.string.name_app)
+        name.text = getString(R.string.team_name)
 
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -78,6 +78,10 @@ class DrawerActivity : AppCompatActivity() {
         this.doubleBackToExitPressedOnce = true
         Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show()
 
-        Handler().postDelayed(Runnable { doubleBackToExitPressedOnce = false }, 2000)
+        Handler(Looper.getMainLooper()).postDelayed({
+            run {
+                doubleBackToExitPressedOnce = false
+            }
+        }, 2000)
     }
 }

@@ -12,7 +12,7 @@
         android:id="@+id/nav_perimetro_triangulo"
         android:name="com.edwinacubillos.practica420201.fragments.PerimetroTrianguloFragment"
         android:label="@string/perimetro_triangulo"
-        tools:layout="@layout/PerimetroTrianguloFragment" />
+        tools:layout="@layout/fragment_perimetro_triangulo" />
     <fragment
         android:id="@+id/nav_area_rectangulo"
         android:name="com.edwinacubillos.practica420201.fragments.area_rectanguloFragment"
