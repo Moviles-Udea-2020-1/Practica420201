@@ -183,37 +183,6 @@
                             android:textColor="@color/colorPrimaryDark" />
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/result_layout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10sp"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:id="@+id/resultText_textView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:hint="@string/resultLabel_textView"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textColorHint="@color/colorPrimaryDark"
-                        android:textSize="15sp"
-                        tools:ignore="ContentDescription" />
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:id="@+id/result_textView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="30sp"
-                        android:hint="@string/result_textView"
-                        android:textColor="@android:color/black"
-                        android:textColorHint="@android:color/black"
-                        android:textSize="15sp"
-                        tools:ignore="ContentDescription" />
-                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
@@ -245,6 +214,38 @@
                 android:textColor="@android:color/background_dark"
                 android:textColorLink="@color/colorPrimaryDark" />
         </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/result_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/resultText_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="@string/resultLabel_textView"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                tools:ignore="ContentDescription" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/result_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30sp"
+                android:hint="@string/result_textView"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="15sp"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/calculateArea_materialButton"
