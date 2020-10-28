@@ -71,6 +71,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:text="@string/calcular_perimetro"
         android:textColor="@android:color/white" />
 
